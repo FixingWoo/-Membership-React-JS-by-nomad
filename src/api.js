@@ -6,7 +6,7 @@ const api = axios.create({
         api_key: "f72838d35c135c556349c31cfe03f654",
         language: "en-US"
     } 
-});
+})
 
 export const movieApi = {
     nowPlaying: () => api.get("movie/now_playing"),
@@ -24,7 +24,7 @@ export const movieApi = {
                 query: term
             }
     })
-};
+}
 
 export const tvApi = {
     topRated: () => api.get("tv/top_rated"),
@@ -41,4 +41,4 @@ export const tvApi = {
                 query: term
             }
     })
-};
+}
